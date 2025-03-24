@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: ["http://localhost:3000", "http://localhost:5173"], // Allow multiple origins
+    origin: ["https://authentication-p7qc.onrender.com", "https://authentication-cyan-nu.vercel.app"], // Allow multiple origins
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }));
