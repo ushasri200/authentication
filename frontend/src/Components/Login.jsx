@@ -10,7 +10,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('http://localhost:5000/api/auth/login', { email, password }, { withCredentials: true });
+            const res = await axios.post('https://authentication-p7qc.onrender.com', { email, password }, { withCredentials: true });
             console.log(res.data.message);
             navigate('/dashboard');
         } catch (err) {
